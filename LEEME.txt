@@ -1,0 +1,23 @@
+NEXUS GAMING — versión inicial
+
+ARCHIVOS
+- index.html: estructura y contenido.
+- styles.css: diseño visual y adaptación a móviles.
+- script.js: menú, búsqueda, filtros y formulario de demostración.
+
+CÓMO ABRIR
+1. Extrae la carpeta nexus_gaming en tu PC.
+2. Abre la carpeta.
+3. Haz doble clic en index.html.
+4. Se abrirá en tu navegador.
+
+CÓMO EDITAR
+- Puedes usar Visual Studio Code (recomendado) o el Bloc de notas.
+- Para cambiar textos, abre index.html.
+- Para cambiar colores, abre styles.css y modifica las variables de :root al inicio.
+- Para cambiar el comportamiento, abre script.js.
+
+IMPORTANTE
+Esta es una primera versión estática. El formulario no guarda usuarios ni envía correos.
+Las noticias son contenido de muestra. Para publicar en internet y añadir cuentas, comentarios,
+panel de administración o base de datos necesitaremos configurar servicios adicionales.

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEXUS GAMING: noticias, videojuegos, guías y comunidad gamer.">
+  <title>NEXUS GAMING | Tu portal gamer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="NEXUS GAMING, inicio">
+      <span class="brand-mark">N</span>
+      <span>NEXUS<span class="brand-accent"> GAMING</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a class="active" href="#inicio">Inicio</a>
+      <a href="#juegos">Videojuegos</a>
+      <a href="#noticias">Noticias</a>
+      <a href="#guias">Guías</a>
+    </nav>
+    <a class="header-cta" href="#comunidad">Únete <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="live-dot"></span> TU UNIVERSO GAMER COMIENZA AQUÍ</p>
+        <h1>JUEGA. EXPLORA.<br><span>SUPERA TUS LÍMITES.</span></h1>
+        <p class="hero-copy">Noticias, videojuegos, guías y todo lo que necesitas para estar un paso adelante en el mundo gaming.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#juegos">Explorar juegos <span>→</span></a>
+          <a class="button button-ghost" href="#noticias">Ver novedades</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>01</strong><span>Tu próximo juego</span></div>
+          <div><strong>∞</strong><span>Posibilidades</span></div>
+          <div><strong>GG</strong><span>Buena partida</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración abstracta de gaming">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="core"><span>N</span><small>NEXUS</small></div>
+        <div class="floating-tag tag-top">LEVEL UP <b>↗</b></div>
+        <div class="floating-tag tag-bottom"><i></i> GAMING MODE: ON</div>
+      </div>
+      <div class="hero-bottom-label">SCROLL PARA DESCUBRIR <span>↓</span></div>
+    </section>
+
+    <section class="section games-section" id="juegos">
+      <div class="section-heading">
+        <div><p class="eyebrow">DESCUBRE TU PRÓXIMO DESAFÍO</p><h2>JUEGOS <span>DESTACADOS</span></h2></div>
+        <p>Encuentra tu siguiente aventura.<br>¿Cuál será tu próximo GG?</p>
+      </div>
+      <div class="game-toolbar">
+        <label class="search-box"><span>⌕</span><input id="gameSearch" type="search" placeholder="Buscar un videojuego..." aria-label="Buscar videojuegos"></label>
+        <div class="filter-buttons" aria-label="Filtrar juegos">
+          <button class="filter-btn selected" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="accion">Acción</button>
+          <button class="filter-btn" data-filter="battle">Battle royale</button>
+          <button class="filter-btn" data-filter="aventura">Aventura</button>
+        </div>
+      </div>
+      <div class="game-grid" id="gameGrid">
+        <article class="game-card game-blood" data-category="accion battle" data-name="blood strike">
+          <div class="game-visual"><span class="game-symbol">BS</span><span class="game-label">ACCIÓN · FPS</span></div>
+          <div class="game-info"><div><h3>Blood Strike</h3><p>Combate rápido y competitivo</p></div><a href="#guias" aria-label="Ver guías de Blood Strike">↗</a></div>
+        </article>
+        <article class="game-card game-fire" data-category="battle accion" data-name="free fire">
+          <div class="game-visual"><span class="game-symbol">FF</span><span class="game-label">BATTLE ROYALE</span></div>
+          <div class="game-info"><div><h3>Free Fire</h3><p>Sobrevive hasta el final</p></div><a href="#guias" aria-label="Ver guías de Free Fire">↗</a></div>
+        </article>
+        <article class="game-card game-roblox" data-category="aventura" data-name="roblox">
+          <div class="game-visual"><span class="game-symbol">R</span><span class="game-label">CREATIVIDAD</span></div>
+          <div class="game-info"><div><h3>Roblox</h3><p>Millones de mundos por explorar</p></div><a href="#guias" aria-label="Ver guías de Roblox">↗</a></div>
+        </article>
+        <article class="game-card game-fortnite" data-category="battle accion" data-name="fortnite">
+          <div class="game-visual"><span class="game-symbol">FN</span><span class="game-label">BATTLE ROYALE</span></div>
+          <div class="game-info"><div><h3>Fortnite</h3><p>Construye, lucha y crea</p></div><a href="#guias" aria-label="Ver guías de Fortnite">↗</a></div>
+        </article>
+        <article class="game-card game-cod" data-category="accion" data-name="call of duty">
+          <div class="game-visual"><span class="game-symbol">COD</span><span class="game-label">FPS · ACCIÓN</span></div>
+          <div class="game-info"><div><h3>Call of Duty</h3><p>Intensidad en cada partida</p></div><a href="#guias" aria-label="Ver guías de Call of Duty">↗</a></div>
+        </article>
+        <article class="game-card game-minecraft" data-category="aventura" data-name="minecraft">
+          <div class="game-visual"><span class="game-symbol">MC</span><span class="game-label">SUPERVIVENCIA</span></div>
+          <div class="game-info"><div><h3>Minecraft</h3><p>Construye tu propio universo</p></div><a href="#guias" aria-label="Ver guías de Minecraft">↗</a></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No encontramos juegos con esa búsqueda. Prueba otro nombre.</p>
+    </section>
+
+    <section class="news-section" id="noticias">
+      <div class="section-heading">
+        <div><p class="eyebrow">MANTENTE INFORMADO</p><h2>ÚLTIMAS <span>NOVEDADES</span></h2></div>
+        <span class="section-index">01 / NEWS</span>
+      </div>
+      <div class="news-grid">
+        <article class="news-feature">
+          <div class="news-art news-art-one"><span>GAMING<br>UPDATE</span><b>01</b></div>
+          <div class="news-copy"><p class="news-meta">ACTUALIDAD <span>•</span> 5 MIN DE LECTURA</p><h3>Lo que todo gamer debería tener en cuenta esta semana</h3><p>Un espacio para descubrir novedades, lanzamientos y tendencias del mundo de los videojuegos.</p><a href="#comunidad">Explorar novedades ↗</a></div>
+        </article>
+        <article class="news-small">
+          <div class="news-art news-art-two"><span>PRO<br>GUIDE</span></div>
+          <div class="news-copy"><p class="news-meta">GUÍAS <span>•</span> CONSEJOS</p><h3>Mejora tu configuración y juega con más comodidad</h3><a href="#guias">Ver guías ↗</a></div>
+        </article>
+        <article class="news-small">
+          <div class="news-art news-art-three"><span>NEXT<br>LEVEL</span></div>
+          <div class="news-copy"><p class="news-meta">COMUNIDAD <span>•</span> GAMING</p><h3>Comparte tus juegos favoritos con la comunidad</h3><a href="#comunidad">Participar ↗</a></div>
+        </article>
+      </div>
+      <p class="demo-note">Las noticias de esta versión son contenido de muestra. Más adelante conectaremos noticias reales y fuentes verificadas.</p>
+    </section>
+
+    <section class="guides-section" id="guias">
+      <div class="guide-intro"><p class="eyebrow">SUBE DE NIVEL</p><h2>CONOCIMIENTO<br><span>ES PODER.</span></h2><p>Consejos, configuraciones y tutoriales para mejorar tu experiencia, tanto en PC como en móvil.</p><a class="button button-primary" href="#comunidad">Quiero aprender <span>→</span></a></div>
+      <div class="guide-list">
+        <a href="#comunidad"><span class="guide-number">01</span><span><b>Configuración gaming</b><small>Optimiza tus controles y rendimiento</small></span><span class="guide-arrow">↗</span></a>
+        <a href="#comunidad"><span class="guide-number">02</span><span><b>Consejos para principiantes</b><small>Aprende lo esencial de cada juego</small></span><span class="guide-arrow">↗</span></a>
+        <a href="#comunidad"><span class="guide-number">03</span><span><b>Trucos y estrategias</b><small>Perfecciona tu estilo de juego</small></span><span class="guide-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="community-section" id="comunidad">
+      <div><p class="eyebrow">EL JUEGO ES MEJOR EN EQUIPO</p><h2>¿LISTO PARA<br><span>UNIRTE AL NEXUS?</span></h2><p>Este es el comienzo de nuestra comunidad gamer.</p></div>
+      <form class="join-form" id="joinForm"><label for="playerName">Tu nombre gamer</label><input id="playerName" type="text" placeholder="Ej. ShadowPlayer" required maxlength="30"><button class="button button-primary" type="submit">Entrar al universo <span>→</span></button><p id="formMessage" role="status">De momento es una demostración local; todavía no guarda datos ni envía correos.</p></form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#inicio"><span class="brand-mark">N</span><span>NEXUS<span class="brand-accent"> GAMING</span></span></a><p>JUEGA A TU MANERA. SUPERA TUS LÍMITES.</p><span>© <span id="year"></span> NEXUS GAMING. Proyecto independiente.</span></footer>
+</body>
+</html>
